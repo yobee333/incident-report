@@ -20,37 +20,114 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
-@font-face {
-    font-family: 'fagocoblack';
-    src: url('fagoco-black_16729-webfont.woff2') format('woff2'),
-         url('fagoco-black_16729-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
 
 body {
     font-family: 'Open Sans', sans-serif;
-    text-transform: lowercase;
+    /* text-transform: lowercase; */
+    
 }
 
-header{
+header {
     display: flex;
+    padding: 10px;
+    width: 90%;
+    justify-content: center;
+    margin: auto;
+}
+
+.logo {
+    width: 25%;
+}
+
+.title {
+    width: 50%;
+    padding-left: 50px;
+
+    
+    
+}
+h1, h2 {
+    font-family: 'fagocoblack', sans-serif;
+    padding-top: 0;
+    margin-left: 10px;
+    margin-bottom: -10px;
+    
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.instructions {
+    width: 90%;
+    justify-content: center;
+    margin: auto;
     padding: 10px;
 }
 
-h1, h2{
-    font-family: 'fagocoblack', sans-serif;
+form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+}
+
+fieldset{
+    padding: 0;
+    border: 1px solid #262626;
+}
+input, label {
+    padding: 5px;
+}
+
+input[type="text"]{
+    width: 250px;
+    height: 2.5rem;
     
-    padding-left: 10px;
-    margin-left: 10px;
+}
+
+input[type="radio"] {
+    width: 20px;
+    
 
 }
-form {
+h3 {
+    font-family: 'fagocoblack', sans-serif;
+}
+
+.report-type, .signature {
+    text-align: center;
+}
+
+.location, .treatment, .previous {
+    flex-wrap: wrap;
+    display: flex; 
+}
+
+.location p, .treatment p, .previous p {
+    justify-content: flex-start;
+    padding: 20px 5px;
+    border: 1px solid #4fc1b1;
+    width: 50%;
+    margin: 0;
+}
+.injury p {
     display: flex;
     flex-direction: column;
 }
 
-h3{
-    font-family: 'fagocoblack', sans-serif;
+#submit {
+    width: 20%;
+    justify-content: center;
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 719px) {
+    header {
+        flex-direction: column;
+    }
 }
