@@ -20,12 +20,37 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
+@font-face {
+    font-family: 'fagocoblack';
+    src: url('fagoco-black_16729-webfont.woff2') format('woff2'),
+         url('fagoco-black_16729-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 body {
     font-family: 'Open Sans', sans-serif;
+    text-transform: lowercase;
 }
 
+header{
+    display: flex;
+    padding: 10px;
+}
+
+h1, h2{
+    font-family: 'fagocoblack', sans-serif;
+    
+    padding-left: 10px;
+    margin-left: 10px;
+
+}
 form {
     display: flex;
     flex-direction: column;
+}
+
+h3{
+    font-family: 'fagocoblack', sans-serif;
 }

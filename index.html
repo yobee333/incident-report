@@ -16,18 +16,20 @@
 
     <header>
         <img src="OSM_mainLogo.png" alt="onestaff logo">
+        <section>
         <h1>Employee Incident Report</h1>
         <h2>Injury/Illness</h2>
+    </section>
     </header>
 
     <p><b>Instructions:</b> Employees shall use this form to report work-related injuries, illnesses which could have
         caused an injury or illness – no matter how minor. <b>Timing:</b> Employee completes the form during their
         work-shift (or within 24-hours of incident).</p>
 
-    <form>
+    <form method="post" action="bridget_brevik@yahoo.com">
         <fieldset>
-            <h3>I am reporting a work related:</h3>
-            <p><input type="radio" value="injury" required>
+            <p>I am reporting a work related:
+            <input type="radio" value="injury" required>
                 <label for="injury">Injury</label>
                 <input type="radio" value="illness" required>
                 <label for="injury">Illness</label>
@@ -136,11 +138,14 @@
             <ul>
                 <li id="selectedArea"></li>
             </ul>
+            <label for="signature">Employee Signature</label>
+            <input type="text" placeholder="employee signature" required>
 
             <label for="today-date">date:</label>
 
             <input type="date" id="today-date" name="today-date" value="2021-09-15" min="2021-09-15" max="2022-12-31">
         </fieldset>
+        <input type="submit" value="submit" /> 
     </form>
     <script src="js/main.js"></script>
 </body>
