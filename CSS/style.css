@@ -128,18 +128,27 @@ h3 {
 .injury p {
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
 .anatomy{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
+    
+    
+}
+
+#anatomy {
+    
+    width: 50%;
+    margin: auto;
+    display: block;
+    
 
 }
 
-area:hover {
-    color:red;
-}
 #submit {
     width: 20%;
     height: 2.5rem;
@@ -164,11 +173,11 @@ area:hover {
 /* media queries */
 
 @media screen and (max-width: 719px) {
-    header, h1, h3, .location, .treatment, .previous  {
+    header, h1, h3, .location, .treatment, .previous, .signature  {
         flex-direction: column;
         width: 100%;
     }
-    .location p, .treatment p, .previous p, p, input[type="text"]{
+    .location p, .treatment p, .previous p, .signature p, p, input[type="text"], #anatomy{
         width: 100%;
     }
     h1 {
