@@ -124,11 +124,13 @@ h3 {
     border: 0.5px solid #4fc1b1;
     width: 50%;
     margin: 0;
+    display: block;
 }
 .injury p {
     display: flex;
     flex-direction: column;
     margin: 0;
+    
 }
 
 .anatomy{
