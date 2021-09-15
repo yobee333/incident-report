@@ -31,9 +31,9 @@
         <input type="hidden" name="_next" value="https://https://friendly-swanson-005d62.netlify.app/thankyou.html">
         <fieldset class="report-type">
             <p>I am reporting a work related:
-                <input type="radio" value="injury" class="radio" required>
+                <input type="radio" value="injury" class="radio" name="report" required>
                 <label for="injury">Injury</label>
-                <input type="radio" value="illness" class="radio" required>
+                <input type="radio" value="illness" class="radio" name="report" required>
                 <label for="injury">Illness</label>
             </p>
         </fieldset>
@@ -65,10 +65,10 @@
             </p>
             <p>Was anyone assisting you at the time?
 
-                <input type="radio" value="yes" class="radio" required>
+                <input type="radio" value="yes" class="radio" name="assist" required>
                 <label for="yes">yes</label>
 
-                <input type="radio" value="no" class="radio">
+                <input type="radio" value="no" class="radio" name="assist">
                 <label for="no">no</label>
             </p>
             <p></p>
@@ -95,10 +95,10 @@
         <fieldset class="treatment">
             <p>Did you get medical treatment?
 
-                <input type="radio" value="yes" class="radio" required>
+                <input type="radio" value="yes" class="radio" name="treatment" required>
                 <label for="yes">yes</label>
 
-                <input type="radio" value="no" class="radio">
+                <input type="radio" value="no" class="radio" name="treatment">
                 <label for="no">no</label>
             </p>
             <p><label for="medical-seen">If yes, whom did you see? </label>
@@ -119,10 +119,10 @@
         <fieldset class="previous">
             <p>Has this part of your body been injured before?
 
-                <input type="radio" value="yes" class="radio" required>
+                <input type="radio" value="yes" class="radio" name="previous-injury" required>
                 <label for="yes">yes</label>
 
-                <input type="radio" value="no" class="radio">
+                <input type="radio" value="no" class="radio" name="previous-injury">
                 <label for="no">no</label>
             </p>
             <p><label for="previous-injury">If yes, when & what happened?</label>
