@@ -1,29 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Incident Report</title>
 </head>
+
 <body>
-    
+
     <header>
         <img src="" alt="onestaff logo">
         <h1>Employee Incident Report</h1>
         <h2>Injury/Illness</h2>
     </header>
 
-    <p><b>Instructions:</b> Employees shall use this form to report work-related injuries, illnesses which could have caused an injury or illness – no matter how minor. <b>Timing:</b> Employee completes the form during their work-shift (or within 24-hours of incident).</p>
-    
+    <p><b>Instructions:</b> Employees shall use this form to report work-related injuries, illnesses which could have
+        caused an injury or illness – no matter how minor. <b>Timing:</b> Employee completes the form during their
+        work-shift (or within 24-hours of incident).</p>
+
     <form>
-        <h3>I am reporting a work related:</h3>
-        <input type="radio" value="injury">
-        <label for="injury">Injury</label>
-        <input type="radio" value="illness">
-        <label for="injury">Illnes</label>
+        <fieldset>
+            <h3>I am reporting a work related:</h3>
+            <p><input type="radio" value="injury" required>
+                <label for="injury">Injury</label>
+                <input type="radio" value="illness" required>
+                <label for="injury">Illness</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <label for="name">Your Name</label>
+            <input type="text" placeholder="your name" required>
+            <label for="title">Your Title</label>
+            <input type="text" placeholder="your title" required>
+            <label for="supervisor">Supervisor at Facility Name</label>
+            <input type="text" placeholder="supervisor at facility name" required>
+            <label for="report">Who did you report it to?</label>
+            <input type="text" placeholder="name of person reported to" required>
+
+            <label for="incident-time">Please select the date and time of the incident:</label>
+
+            <input type="datetime-local" id="incident-time" name="incident-time" value="2020-01-01T00:00"
+                min="2020-01-01T00:00" max="2023-12-31T11:59">
+
+            <label for="shift-time">Please select the time you started your shift: </label>
+            <input id="shift-time" type="time" name="appt-time" value="12:00">
+            <label for="witness">Names of witnesses (if any)</label>
+            <input type="text" placeholder="names of witnesses" required>
+            <p>Was anyone assisting you at the time?
+
+                <input type="radio" value="yes" required>
+                <label for="yes">yes</label>
+
+                <input type="radio" value="no">
+                <label for="no">no</label>
+                <label for="assistant-name">Who?</label>
+                <input type="text" placeholder="name of assistant">
+            </p>
+        </fieldset>
+        <fieldset>
+            <p><label for="what-happened">Where, exactly did it happen? (e.g., Room Number)</label>
+                <textarea cols="30" rows="8" placeholder="explain where it happened" required></textarea>
+            </p>
+            <p><label for="what-doing">What were you doing at the time? </label>
+                <textarea cols="30" rows="8" placeholder="explain what happened" required></textarea>
+            </p>
+            <p><label for="describe-incident">Describe step by step what led to the incident.</label>
+                <textarea cols="30" rows="8" placeholder="describe step by step what led to the incident"
+                    required></textarea>
+            </p>
+            <p><label for="what-injured">What part(s) of your body were injured? </label>
+                <textarea cols="30" rows="8" placeholder="part(s) of your body that were injured" required></textarea>
+            </p>
+            </fieldset>
+            <fieldset>
+            <p>Did you get medical treatment?
+
+                <input type="radio" value="yes" required>
+                <label for="yes">yes</label>
+
+                <input type="radio" value="no">
+                <label for="no">no</label>
+                <label for="medical-seen">If yes, whom did you see? </label>
+                <input type="text" placeholder="whom did you see">
+                <label for="phone">Doctor phone # </label>
+
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <label for="treatment-facility-name">Name of treatment facility:</label>
+                <input type="text" placeholder="name of treatment facility" required>
+                <label for="treatment-facility-address">Address of treatment facility:</label>
+                <input type="text" placeholder="address of treatment facility" required></p>
+        </fieldset>
+        <fieldset>
+            <p>Has this part of your body been injured before? 
+
+                <input type="radio" value="yes" required>
+                <label for="yes">yes</label>
+
+                <input type="radio" value="no">
+                <label for="no">no</label>
+                <label for="previous-injury">If yes, when & what happened?</label>
+                <input type="text" placeholder="">
+            </p>
+            <!-- Image Map Generated by http://www.image-map.net/ -->
+<img src="injury area.PNG" usemap="#image-map">
+
+<map name="image-map">
+    <area target="" alt="front head" title="front head" href="" coords="72,15,15" shape="circle">
+    <area target="" alt="back head" title="back head" href="" coords="166,11,15" shape="circle">
+    <area target="" alt="front shoulder/chest" title="front shoulder/chest" href="" coords="73,50,27" shape="circle">
+    <area target="" alt="back shoulder/neck" title="back shoulder/neck" href="" coords="164,47,26" shape="circle">
+    <area target="" alt="right arm" title="right arm" href="" coords="42,81,20" shape="circle">
+    <area target="" alt="left arm" title="left arm" href="" coords="100,83,21" shape="circle">
+    <area target="" alt="front belly/trunk" title="front belly/trunk" href="" coords="71,89,26" shape="circle">
+    <area target="" alt="back" title="back" href="" coords="164,77,29" shape="circle">
+    <area target="" alt="leg" title="leg" href="" coords="66,140,35" shape="circle">
+    <area target="" alt="feet" title="feet" href="" coords="60,187,32" shape="circle">
+</map>
+        </fieldset>
 
     </form>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
