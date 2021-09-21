@@ -93,7 +93,7 @@ form {
 
 fieldset{
     padding: 0;
-    border: 1px solid #308b7c;
+    border: none;
 }
 input, label {
     padding: 5px;
