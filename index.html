@@ -133,8 +133,9 @@
         <fieldset class="anatomy">
             
             
-            <p><label for="injured-area">Please select part of body affected:</label>
-                <select name="body-part" required>
+            <p class="picker"><label for="injured-area">Please select part of body affected:</label>
+                <select name="body-part" id="injury" required>
+                    <option></option>
                     <option value="head">head</option>
                     <option value="neck-shoulders">neck/shoulders</option>
                     <option value="torso">torso</option>
@@ -146,6 +147,9 @@
                     <option value="right-foot">right foot</option>
                     <option value="left-foot">left foot</option>
                 </select></p>
+                <ul id="injury-list">
+                    <li></li>
+                </ul>
                 <p><img src="injury.png" alt="anatomy selector with labels" id="anatomy"></p>
             
         </fieldset>

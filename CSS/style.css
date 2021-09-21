@@ -21,7 +21,7 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
-@font-face {
+/* @font-face {
     font-family: 'fagocoblack';
     src: url('fagoco-black_16729-webfont.woff2') format('woff2'),
         url('fagoco-black_16729-webfont.woff') format('woff'),
@@ -29,7 +29,7 @@
     font-weight: normal;
     font-style: normal;
 
-}
+} */
 
 body {
     font-family: 'Open Sans', sans-serif;
