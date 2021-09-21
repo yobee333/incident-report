@@ -33,8 +33,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    color: #262626;
-    
+    /* text-transform: lowercase; */
     
 }
 
@@ -42,13 +41,16 @@ header {
     display: flex;
     padding: 10px;
     width: 90%;
-    margin: auto;
+    justify-content: center;
     align-items: center;
+    margin: auto;
+    border: 1px solid green;
 }
 
 #logo {
     width: auto;
     height: 100px;
+    border: 2px solid orange;
 }
 
 
@@ -56,14 +58,16 @@ header {
 .title {
     width: 66%;
     height: auto;
-    padding: 15px;
+    border: 2px solid red;
+    padding: 10px;
 
     
     
 }
 h1, h2 {
     font-family: 'fagocoblack', sans-serif;
-    
+    border: 1px solid blue;
+    margin-left: 10%;
 }
 
 h1 {
@@ -89,7 +93,7 @@ form {
 
 fieldset{
     padding: 0;
-    /* border: 1px solid #262626; */
+    border: none;
 }
 input, label {
     padding: 5px;
