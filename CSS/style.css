@@ -45,13 +45,15 @@ header {
     margin: auto;
 }
 
-.logo {
-    width: 25%;
+#logo {
+    width: 33%;
+    height: auto;
+    border: 2px solid orange;
 }
 
 .title {
-    width: 50%;
-    padding-left: 50px;
+    width: 66%;
+    border: 2px solid red;
 
     
     
