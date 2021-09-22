@@ -253,3 +253,7 @@ display: hidden;
 
 }
 
+#thanks{
+    text-align: center;
+    text-transform: lowercase;
+}
