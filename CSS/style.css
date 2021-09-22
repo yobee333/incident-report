@@ -120,11 +120,16 @@ h3 {
 .location p, .treatment p, .previous p {
     justify-content: flex-start;
     padding: 20px 5px;
-    border: 1px solid #4fc1b1;
+    border-bottom: 1px solid #4fc1b1;
+    border-left: 1px solid #4fc1b1;
     border-collapse: collapse;
     width: 50%;
     margin: 0;
     display: block;
+}
+
+.end{
+    border-right: 1px solid #4fc1b1;
 }
 .injury p {
     display: flex;
@@ -216,9 +221,6 @@ button:hover {
 
 }
 
-@media screen and (max-width: 830px) {
-
-}
 
 @media screen and (max-width: 750px) {
 
@@ -230,6 +232,14 @@ button:hover {
     .location p, .treatment p, .previous p, .signature p, p, input[type="text"], #anatomy{
         width: 100%;
     }
+
+    .location p, .treatment p, .previous p{
+        border-left: none;
+    }
+    
+    .end{
+        border-right: none;
+    }
     h1 {
         font-size: 1.5rem;
     }
@@ -239,9 +249,7 @@ button:hover {
     fieldset{
         border: none;
     }
-    .fill {
-display: hidden;
-    }
+
 
 }
 
