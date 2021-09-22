@@ -187,6 +187,15 @@ border-radius: 5px;
     height: 2.5rem;
 }
 
+.checkboxes{
+    display: flex;
+    flex-wrap: wrap;
+}
+.check{
+    padding: 5px;
+    width: 20%;
+    margin: 0;
+}
 
 
 #anatomy {
@@ -230,6 +239,12 @@ button:hover {
     }
 }
 
+@media screen and (max-width: 903px) {
+    .check{
+        width: 33%;
+    }
+}
+
 @media screen and (max-width: 750px) {
 
     header, h1, h3, .location, .treatment, .previous, .signature  {
@@ -243,11 +258,19 @@ button:hover {
     h1 {
         font-size: 1.5rem;
     }
+
+    fieldset{
+        border: none;
+    }
     .fill {
-        display: hidden;
         height: 0;
         border: none;
     }
 
 }
 
+@media screen and (max-width: 750px){
+    .check{
+        width: 50%;
+    }
+}

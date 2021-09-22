@@ -62,7 +62,7 @@
                 <input id="shift-time" type="time" name="start-time" value="12:00">
             </p>
             <p><label for="witness">Names of witnesses (if any)</label>
-                <input type="text" placeholder="firstname lastname" name ="witness">
+                <input type="text" placeholder="firstname lastname" name="witness">
             </p>
             <p>Was anyone assisting you at the time?
 
@@ -86,11 +86,11 @@
                 <textarea cols="30" rows="8" placeholder="" name="what-happened" required></textarea>
             </p>
             <p><label for="describe-incident">Describe step by step what led to the incident.</label>
-                <textarea cols="30" rows="8" placeholder="" name="describe-incident"
-                    required></textarea>
+                <textarea cols="30" rows="8" placeholder="" name="describe-incident" required></textarea>
             </p>
             <p><label for="what-injured">What part(s) of your body were injured? </label>
-                <textarea cols="30" rows="8" placeholder="example back and right arm" name="injured-body-part" required></textarea>
+                <textarea cols="30" rows="8" placeholder="example back and right arm" name="injured-body-part"
+                    required></textarea>
             </p>
         </fieldset>
         <fieldset class="treatment">
@@ -132,12 +132,13 @@
             </p>
         </fieldset>
         <fieldset class="anatomy">
-            
-            
-            <p class="picker"><label for="injured-area">Please select part of body affected (select all that apply):</label>
-                <container><select name="body-part" multiple id="injury" required>
-                    
-                    <option value="head">head</option>
+
+
+            <p class="picker"><label for="injured-area">Please select part of body affected (select all that
+                    apply):</label>
+                <!-- <container><select name="body-part" id="injury" required> -->
+
+                <!-- <option value="head">head</option>
                     <option value="neck/shoulders">neck/shoulders</option>
                     <option value="torso">torso</option>
                     <option value="back">back</option>
@@ -151,28 +152,40 @@
                 <button class="button" type="button" id="add-injury">add</button></container>
             </p>
                 <ul id="anatomy-list" name="body-part">
-                </ul>
-                <!-- <p><input type="checkbox" name="body-part">
-                    <label for="head" value="head">head</label>
-                <input type="checkbox" name="body-part">
-                    <label for="neck-shoulders" value="neck-shoulders">neck/shoulders<label>
-                <input type="checkbox" name="body-part">
-                    <label for="torso" value="torso">torso<label>
-                <input type="checkbox" name="body-part">
-                    <label for="back" value="back">back<label>
-                    <input type="checkbox" name="body-part">
+                </ul> -->
+            <section class="checkboxes">
+            <p class="check"><input type="checkbox" name="body-part">
+                <label for="head" value="head">head</label>
+            </p>
+            <p class="check"><input type="checkbox" name="body-part">
+                <label for="neck-shoulders" value="neck-shoulders">neck/shoulders<label>
+            </p>
+            <p class="check"><input type="checkbox" name="body-part">
+                <label for="torso" value="torso">torso<label>
+            </p>
+            <p class="check"><input type="checkbox" name="body-part">
+                <label for="back" value="back">back<label>
+            </p>
+            <p class="check"><input type="checkbox" name="body-part">
                 <label for="right-arm" value="right-arm">right arm<label>
-                    <input type="checkbox" name="body-part">
+            </p>
+            <p class="check"><input type="checkbox" name="body-part">
                 <label for="left-arm" value="left-arm">left arm<label>
-                    <input type="checkbox" name="body-part">
+            </p>
+            <p class="check"><input type="checkbox" name="body-part">
                 <label for="right-leg" value="right-leg">right leg<label>
-                    <input type="checkbox" name="body-part">
+            </p>
+            <p class="check"><input type="checkbox" name="body-part">
                 <label for="left-leg" value="left-leg">left leg<label>
-                    <input type="checkbox" name="body-part">
+            </p>
+            <p class="check"><input type="checkbox" name="body-part">
                 <label for="right-foot" value="right-foot">right foot</label>
-                <input type="checkbox" name="body-part">
-                <label for="left-foot" value="left-foot">left foot</label></p> -->
-                <p><img src="injury.png" alt="anatomy selector with labels" id="anatomy"></p>
+            </p>
+            <p class="check"><input type="checkbox" name="body-part">
+                <label for="left-foot" value="left-foot">left foot</label>
+            </p>
+        </section>
+            <p><img src="injury.png" alt="anatomy selector with labels" id="anatomy"></p>
 
         </fieldset>
         <fieldset>
@@ -184,12 +197,12 @@
 
                 <input type="date" id="today-date" name="today-date" value="2021-09-15" min="2021-09-15"
                     max="2022-12-31">
-                    <button type="submit" value="submit" id="submit">send</button>
+                <button type="submit" value="submit" id="submit">send</button>
             </p>
-            
+
         </fieldset>
 
-            
+
 
     </form>
 
