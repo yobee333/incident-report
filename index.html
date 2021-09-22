@@ -28,7 +28,7 @@
         work-shift (or within 24-hours of incident).</p>
 
     <form name="incident" action="https://formsubmit.co/bridget_brevik@yahoo.com" method="POST">
-        <input type="hidden" name="_cc" value="awettengel@onestaffmedical.com,kdawson@onestaffmedical.com">
+        <!-- <input type="hidden" name="_cc" value="awettengel@onestaffmedical.com,kdawson@onestaffmedical.com"> -->
         <input type="hidden" name="_next" value="https://friendly-swanson-005d62.netlify.app/thankyou.html">
         <fieldset class="report-type">
             <p>I am reporting a work related:
@@ -133,25 +133,46 @@
         <fieldset class="anatomy">
             
             
-            <p class="picker"><label for="injured-area">Please select part of body affected:</label>
+            <p class="picker"><label for="injured-area">Please select part of body affected (select all that apply):</label>
                 <select name="body-part" id="injury" required>
-                    <option></option>
+                    
                     <option value="head">head</option>
-                    <option value="neck-shoulders">neck/shoulders</option>
+                    <option value="neck/shoulders">neck/shoulders</option>
                     <option value="torso">torso</option>
                     <option value="back">back</option>
-                    <option value="right-arm">right arm</option>
-                    <option value="left-arm">left arm</option>
-                    <option value="right-leg">right leg</option>
-                    <option value="left-leg">left leg</option>
-                    <option value="right-foot">right foot</option>
-                    <option value="left-foot">left foot</option>
-                </select></p>
-                <ul id="injury-list">
-                    <li></li>
+                    <option value="right arm">right arm</option>
+                    <option value="left arm">left arm</option>
+                    <option value="right leg">right leg</option>
+                    <option value="left leg">left leg</option>
+                    <option value="right foot">right foot</option>
+                    <option value="left foot">left foot</option>
+                </select>
+                <button class="button" type="button" id="add-injury">add</button>
+            </p>
+                <ul id="anatomy-list">
                 </ul>
+                <!-- <input type="checkbox" name="body-part">
+                    <label for="head" value="head">head</label>
+                <input type="checkbox" name="body-part">
+                    <label for="neck-shoulders" value="neck-shoulders">neck/shoulders<label>
+                <input type="checkbox" name="body-part">
+                    <label for="torso" value="torso">torso<label>
+                <input type="checkbox" name="body-part">
+                    <label for="back" value="back">back<label>
+                    <input type="checkbox" name="body-part">
+                <label for="right-arm" value="right-arm">right arm<label>
+                    <input type="checkbox" name="body-part">
+                <label for="left-arm" value="left-arm">left arm<label>
+                    <input type="checkbox" name="body-part">
+                <label for="right-leg" value="right-leg">right leg<label>
+                    <input type="checkbox" name="body-part">
+                <label for="left-leg" value="left-leg">left leg<label>
+                    <input type="checkbox" name="body-part">
+                <label for="right-foot" value="right-foot">right foot</label>
+                <input type="checkbox" name="body-part">
+                <label for="left-foot" value="left-foot">left foot</label></p> -->
                 <p><img src="injury.png" alt="anatomy selector with labels" id="anatomy"></p>
-            
+
         </fieldset>
         <fieldset>
             <p class="signature">

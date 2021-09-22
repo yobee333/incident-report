@@ -139,11 +139,30 @@ h3 {
 .anatomy{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 10px;
+    justify-content: space-around;
+    padding: 10px; 
+    
+}
+
+ul{
+    border: 2px solid blue;
+    display: flex;
     
     
 }
+li{
+    width: 10%;
+    display: flex;
+    text-align: center;
+    border: 2px solid red;
+
+}
+
+button{
+    
+}
+
+
 
 #anatomy {
     

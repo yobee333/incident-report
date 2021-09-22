@@ -1,17 +1,31 @@
 const injuryInput = document.getElementById('injury')
-const ul = document.querySelector('ul')
-const injuryList = document.getElementsByTagName('li')
 
-document.getElementById('injury').addEventListener('click', addText)
+
+document.getElementById('add-injury').addEventListener('click', addText)
 
 
 function addText() {
-    
-    let injuryText = injuryInput.options[injuryInput.selectedIndex].text
-    let node = document.createElement('li')
-    // document.getElementById('injury-list').innerHTML = injuryText
+    const ul = document.getElementById('anatomy-list')
+    const injuryLiList = ul.children
+    const injuryTextList = [...injuryLiList].map(li=> li.textContent)
+    console.log(injuryTextList)
 
-    node.appendChild(document.createTextNode(injuryText))
-    document.querySelector('ul').appendChild(node)
+    let injuryText = injuryInput.value
+    
+    if(!injuryTextList.includes(injuryText)){
+        let node = document.createElement('li')
+        node.appendChild(document.createTextNode(injuryText))
+        
+        let button = document.createElement('button')
+        
+        button.textContent = '    X'
+        node.appendChild(button)
+        node.addEventListener('click', (event)=>{
+            const deleteButton = event.target;
+            const listItem = deleteButton.parentNode
+            listItem.remove()
+        })
+        document.querySelector('ul').appendChild(node)
+    }
 }
 
