@@ -157,7 +157,7 @@ ul{
 }
 li{
     justify-content: space-between;
-    width: 15%;
+    width: 25%;
     display: flex;
     text-align: center;
     margin: 0 10px;
@@ -187,29 +187,16 @@ border-radius: 5px;
     height: 2.5rem;
 }
 
-.checkboxes{
-    display: flex;
-    flex-wrap: wrap;
-}
-.check{
-    padding: 5px;
-    width: 20%;
-    margin: 0;
-}
-
 
 #anatomy {
     
     width: 50%;
     margin: auto;
     display: block;
-    
-
 }
 
 #submit {
     width: 20%;
-
     text-align: center;
     align-items: center;
 
@@ -235,13 +222,13 @@ button:hover {
         width: 80px;
     }
     li{
-        width: 20%;
+        width: 25%;
     }
 }
 
-@media screen and (max-width: 903px) {
-    .check{
-        width: 33%;
+@media screen and (max-width: 830px) {
+    .li{
+        width: 30%;
     }
 }
 
@@ -263,8 +250,7 @@ button:hover {
         border: none;
     }
     .fill {
-        height: 0;
-        border: none;
+display: hidden;
     }
 
 }
