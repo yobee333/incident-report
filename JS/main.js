@@ -14,7 +14,7 @@ function addText() {
 
     if(!injuryTextList.includes(injuryText)){
         ul.insertAdjacentHTML('beforeend', `
-            <li id="${injuryText}">
+            <li name="body-part" id="${injuryText}">
                 ${injuryText}
                 <button type="button" id="${injuryText}-btn">X</button>
             </li>
