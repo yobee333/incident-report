@@ -145,21 +145,35 @@ h3 {
 }
 
 ul{
-    border: 2px solid blue;
     display: flex;
+    
     
     
 }
 li{
-    width: 10%;
+    justify-content: space-between;
+    width: 15%;
     display: flex;
     text-align: center;
-    border: 2px solid red;
-
+    margin: 0 10px;
+    border: 1px solid gray;
+    
 }
 
+
 button{
+    background-color: #308b7c;
+    color: white;
     
+}
+
+#add-injury, #submit {
+    font-size: 1rem;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid #262626;
+    height: 2.5rem;
 }
 
 
@@ -175,20 +189,13 @@ button{
 
 #submit {
     width: 20%;
-    height: 2.5rem;
+
     text-align: center;
     align-items: center;
-    font-size: 1rem;
-    padding: 10px;
-    margin: 10px;
-    background-color: #308b7c;
-    color: white;
-    border: 2px solid #262626;
-    border-radius: 10px;
-    font-size: 1rem;
+
 }
 
-#submit:hover {
+button:hover {
     background-color: #cbe9e3;
     color: #262626;
 
