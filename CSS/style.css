@@ -57,6 +57,7 @@ header {
     width: 66%;
     height: auto;
     padding: 15px;
+    text-align: center;
 
     
     
@@ -84,20 +85,23 @@ form {
     flex-direction: column;
     justify-content: center;
     margin: auto;
-    padding: 10px;
+    padding: -2px;
 }
 
 fieldset{
     padding: 0;
-    border: none;
+    border: 2px solid #262626;
 }
+
+
 input, label {
     padding: 5px;
 }
 
-input[type="text"], select{
+input[type="text"], input[type="number"], select{
     width: 50%;
     height: 2.5rem;
+    font-family: 'Open Sans', sans-serif; 
     
 }
 
@@ -124,7 +128,8 @@ h3 {
 .location p, .treatment p, .previous p {
     justify-content: flex-start;
     padding: 20px 5px;
-    border: 0.5px solid #4fc1b1;
+    border: 1px solid #4fc1b1;
+    border-collapse: collapse;
     width: 50%;
     margin: 0;
     display: block;
@@ -146,7 +151,7 @@ h3 {
 
 ul{
     display: flex;
-    
+    flex-wrap: wrap;
     
     
 }
@@ -156,7 +161,9 @@ li{
     display: flex;
     text-align: center;
     margin: 0 10px;
-    border: 1px solid gray;
+    border: 1px solid #cbe9e3;
+    padding: 5px;
+    
     
 }
 
@@ -165,6 +172,10 @@ button{
     background-color: #308b7c;
     color: white;
     
+}
+
+li > button{
+border-radius: 5px;
 }
 
 #add-injury, #submit {
@@ -203,8 +214,26 @@ button:hover {
 
 /* media queries */
 
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 1171px){
+    .picker, ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .picker label{
+        width: 100%;
+        }
+    #add-injury{
+        width: 80px;
+    }
+    li{
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
     header, h1, h3, .location, .treatment, .previous, .signature  {
+        display: flex;
         flex-direction: column;
         width: 100%;
     }
@@ -212,7 +241,12 @@ button:hover {
         width: 100%;
     }
     h1 {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
+    }
+    .fill {
+        display: hidden;
+        height: 0;
+        border: none;
     }
 
 }

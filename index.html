@@ -40,16 +40,16 @@
         </fieldset>
         <fieldset class="location">
             <p><label for="name">Your Name</label>
-                <input type="text" placeholder="your name" name="name" required>
+                <input type="text" placeholder="firstname lastname" name="name" required>
             </p>
             <p><label for="title">Your Title</label>
-                <input type="text" placeholder="your title" name="title" required>
+                <input type="text" placeholder="ex. registered nurse" name="title" required>
             </p>
             <p><label for="supervisor">Supervisor at Facility Name</label>
-                <input type="text" placeholder="supervisor at facility name" name="supervisor" required>
+                <input type="text" placeholder="firstname lastname" name="supervisor" required>
             </p>
             <p><label for="report">Who did you report it to?</label>
-                <input type="text" placeholder="name of person reported to" name="reported-to" required>
+                <input type="text" placeholder="firstname lastname" name="reported-to" required>
             </p>
 
             <p><label for="incident-time">Please select the date and time of the incident:</label>
@@ -62,7 +62,7 @@
                 <input id="shift-time" type="time" name="start-time" value="12:00">
             </p>
             <p><label for="witness">Names of witnesses (if any)</label>
-                <input type="text" placeholder="names of witnesses" name ="witness">
+                <input type="text" placeholder="firstname lastname" name ="witness">
             </p>
             <p>Was anyone assisting you at the time?
 
@@ -72,25 +72,25 @@
                 <input type="radio" value="no" class="radio" name="assistant">
                 <label for="no">no</label>
             </p>
-            <p></p>
+            <p class="fill"></p>
             <p><label for="assistant-name">Who?</label>
-                <input type="text" placeholder="name of assistant" name="assistant-name">
+                <input type="text" placeholder="firstname lastname" name="assistant-name">
             </p>
 
         </fieldset>
         <fieldset class="injury">
-            <p><label for="what-happened">Where, exactly did it happen? (e.g., Room Number)</label>
-                <textarea cols="30" rows="8" placeholder="explain where it happened" name="where-happened" required></textarea>
+            <p><label for="where-happened">Where, exactly did it happen? (e.g., Room Number)</label>
+                <textarea cols="30" rows="8" placeholder="example Room 100" name="where-happened" required></textarea>
             </p>
             <p><label for="what-doing">What were you doing at the time? </label>
-                <textarea cols="30" rows="8" placeholder="explain what happened" name="what-happened" required></textarea>
+                <textarea cols="30" rows="8" placeholder="" name="what-happened" required></textarea>
             </p>
             <p><label for="describe-incident">Describe step by step what led to the incident.</label>
-                <textarea cols="30" rows="8" placeholder="describe step by step what led to the incident" name="describe-incident"
+                <textarea cols="30" rows="8" placeholder="" name="describe-incident"
                     required></textarea>
             </p>
             <p><label for="what-injured">What part(s) of your body were injured? </label>
-                <textarea cols="30" rows="8" placeholder="part(s) of your body that were injured" name="injured-body-part" required></textarea>
+                <textarea cols="30" rows="8" placeholder="example back and right arm" name="injured-body-part" required></textarea>
             </p>
         </fieldset>
         <fieldset class="treatment">
@@ -103,19 +103,19 @@
                 <label for="no">no</label>
             </p>
             <p><label for="medical-seen">If yes, whom did you see? </label>
-                <input type="text" placeholder="whom did you see" name="medical-seen">
+                <input type="text" placeholder="example Dr. John Brown" name="medical-seen">
             </p>
 
             <p><label for="phone">Doctor phone # </label>
                 <input type="tel" id="phone" name="phone" placeholder="555-555-5555">
             </p>
             <p><label for="treatment-facility-name">Name of treatment facility:</label>
-                <input type="text" placeholder="name of treatment facility" name="treatment-facility">
+                <input type="text" placeholder="" name="treatment-facility">
             </p>
             <p><label for="treatment-facility-address">Address of treatment facility:</label>
-                <input type="text" placeholder="address of treatment facility" name="address">
+                <input type="text" placeholder="" name="address">
             </p>
-            <p></p>
+            <p class="fill"></p>
 
         </fieldset>
         <fieldset class="previous">
@@ -128,14 +128,14 @@
                 <label for="no">no</label>
             </p>
             <p><label for="previous-injury">If yes, when & what happened?</label>
-                <input type="text" placeholder="describe previous injury" name="describe-previous-injury">
+                <input type="text" placeholder="" name="describe-previous-injury">
             </p>
         </fieldset>
         <fieldset class="anatomy">
             
             
             <p class="picker"><label for="injured-area">Please select part of body affected (select all that apply):</label>
-                <select name="body-part" id="injury" required>
+                <container><select name="body-part" id="injury" required>
                     
                     <option value="head">head</option>
                     <option value="neck/shoulders">neck/shoulders</option>
@@ -148,7 +148,7 @@
                     <option value="right foot">right foot</option>
                     <option value="left foot">left foot</option>
                 </select>
-                <button class="button" type="button" id="add-injury">add</button>
+                <button class="button" type="button" id="add-injury">add</button></container>
             </p>
                 <ul id="anatomy-list">
                 </ul>
