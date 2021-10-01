@@ -17,3 +17,11 @@ There are some changes I would make if I were to implement this for actual use. 
 
 ## Screenshots
 
+### Desktop View
+<img src="https://user-images.githubusercontent.com/69943959/135678614-f1c9a8f2-2752-4a5f-9fe7-dda4ce882fb4.PNG">
+
+### Mobile View
+<img src="https://user-images.githubusercontent.com/69943959/135678588-08b05e89-4df1-415e-bc12-05666c843c60.PNG">
+
+### Injury Area Selector
+<img src="https://user-images.githubusercontent.com/69943959/135678625-0e2732ab-53a3-4caa-a4eb-b05aa18a5e31.PNG">
